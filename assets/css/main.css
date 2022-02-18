@@ -1,0 +1,348 @@
+/* ----------------------------GOOGLE FONTS-------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/*------------------------------ BASE ----------------------------------------*/
+/* Set style to base element */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Remove default underline */
+a {
+  text-decoration: none;
+  color: #000;
+}
+html {
+  /* It gives smooth feeling */
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: var(--body-color);
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 2rem;
+}
+button {
+  border-radius: 20px;
+  padding: 10px 15px;
+  background-color: white;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+header {
+  display: flex;
+  position: sticky;
+  padding: 20px;
+  margin: 0px;
+  top: 0;
+  background-color: white;
+  z-index: 200;
+}
+
+#logo-top {
+  flex-basis: 50%;
+}
+nav {
+  position: sticky;
+  flex-basis: 50%;
+}
+nav ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: right;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+nav a {
+  color: #444444;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #444444;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Reusable Class */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#home,
+#about,
+#portofolio,
+#contact,
+#skill {
+  height: 100vh;
+  padding: 20px;
+}
+/* MAIN */
+
+/* -------------HOME------------ */
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  height: 100vh;
+}
+.home-data {
+  margin: auto 0;
+  padding-right: 100px;
+  /* background-color: blue; */
+  flex-basis: 50%;
+  text-align: right;
+  transition: 1s;
+}
+.additional-image {
+  flex-basis: 50%;
+  /* background-color: purple; */
+}
+.featured-image {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: cover;
+  object-position: top;
+  transition: 1s;
+}
+.polygon-custom {
+  clip-path: polygon(33% 0%, 77% 25%, 94% 63%, 69% 90%, 41% 100%, 0 60%);
+}
+/* ----------------ABOUT-------------- */
+#about {
+  /* background-color: rgb(22, 21, 21); */
+  flex-direction: column;
+  align-items: center;
+  /* color: white */
+}
+.head-section {
+  margin-top: 80px;
+  flex-basis: 20%;
+  text-align: center;
+}
+.content-section {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.content-image {
+  flex-basis: 50%;
+  text-align: center;
+  border-radius: 20px;
+}
+.content-image img {
+  border-radius: 20px;
+  max-width: 80%;
+}
+.content-info {
+  flex-basis: 50%;
+  padding: 50px;
+  /* max-width: 30%; */
+  /* text-align: center; */
+  margin-right: 20px;
+}
+
+.additional-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 32px 0;
+  height: 100px;
+}
+.mini-info {
+  padding: 20px;
+  text-align: center;
+}
+.button-download {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-download a:hover {
+  color: white;
+}
+
+/* -------PORTOFOLIO------ */
+
+#portofolio {
+  /* background-color: green; */
+  height: 100vh;
+}
+#portofolio .content-section {
+  flex-basis: 60%;
+}
+#portofolio .card {
+  margin: 0 100px;
+}
+.slides input {
+  display: none;
+}
+
+#portofolio .porto-slide {
+  display: none;
+}
+#portofolio .nav-manual {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
+  align-items: center;
+}
+#portofolio .btn-nav {
+  height: 10px;
+  width: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+#portofolio .btn-nav:hover {
+  background-color: black;
+}
+
+/* Fading animation */
+.fade-effect {
+  animation-name: fade-effect ;
+  animation-duration: 2s;
+
+}
+
+@keyframes fade-effect  {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+/* CONTACT STYLING */
+
+#contact {
+  height: 100vh;
+}
+#contact .contact-image {
+  height: 400px;
+}
+#contact .additional-image {
+  text-align: center;
+}
+
+#contact .card {
+  background: #b4b4c4;
+}
+
+.sosmed-info {
+  display: flex;
+  padding: 5px;
+}
+.sosmed-info span {
+  margin-left: 20px;
+}
+.content-info h3 {
+  margin-top: 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.heart:hover {
+  color: red;
+}
+/* MEDIA QUERRY */
+@media screen and (max-width: 992px) {
+  #portofolio .card {
+    margin: 0 auto;
+  }
+}
+/* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 600px */
+@media screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  /* Home Styling */
+  #home {
+    flex-direction: column-reverse;
+  }
+  .home-data {
+    text-align: center;
+    padding: 0;
+    margin: 20px auto;
+  }
+  .featured-image {
+    width: 100%;
+    max-height: 50vh;
+  }
+
+  .head-section {
+    flex-basis: 10%;
+    margin: 0;
+  }
+  .content-section {
+    flex-basis: 90%;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 20px;
+  }
+  .content-image {
+    margin: 16px 0;
+    flex-basis: 20%;
+  }
+
+  .additional-info {
+    margin: 10px 0;
+
+  }
+  .content-info {
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+  }
+  .content-info > .button-download {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 5px;
+  }
+  #portofolio .card {
+    margin: 0 auto;
+  }
+
+  #contact .content-section{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #contact .contact-image{
+    max-height: 200px;
+  }
+  .container-btn-nav{
+    margin-top: 20px;
+  }
+  footer{
+    justify-content: center;
+  }
+
+}

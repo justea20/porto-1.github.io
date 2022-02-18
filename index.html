@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>My Portofolio</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo-top">
+        <img src="assets/images/logo.svg" alt="logo" />
+      </div>
+      <nav id="navbar-top">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portofolio">My Portofolio</a></li>
+          <li><a href="#contact">My Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-------------------------- HOME SECTION----------------- -->
+      <section id="home">
+        <div class="home-data">
+          <h1>Hi, I'm Jasti Ohanna</h1>
+          <h3>Frontend Web Developer</h3>
+          <a href="#about"> <button>Want to know me better?</button></a>
+        </div>
+        <div class="additional-image">
+          <div class="polygon-custom">
+            <img
+              src="assets/images/profile.jpg"
+              class="featured-image"
+              alt=""
+            />
+          </div>
+          <!-- <figcaption class="message-custom">
+                <p>Let's go baby!</p>
+            </figcaption> -->
+        </div>
+      </section>
+      <!-------------------------- ABOUT SECTION---------------- -->
+      <section id="about">
+        <div class="head-section">
+          <h1>About Me</h1>
+          <p>I'm 22 yo college student in University of Surabaya (UBAYA)</p>
+        </div>
+        <div class="content-section">
+          <div class="content-image">
+            <img src="assets/images/about.jpg" alt="" />
+          </div>
+          <div class="content-info">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia est
+              quis tempora ea un de debitis? Perspiciatis placeat facere est
+              iste? Ipsa sed placeat vitae mollitia accusantium, facere
+              aspernatur aut odit corporis, quod modi, eum nulla! Id qui, natus
+              sit non dolor ex maxime saepe ducimus expedita sunt possimus,
+              voluptatum amet?
+            </p>
+            <div class="additional-info">
+              <div class="mini-info">
+                <h1>10+</h1>
+                <span>Organization Experience</span>
+              </div>
+              <div class="mini-info">
+                <h1>02+</h1>
+                <span>Project Finished</span>
+              </div>
+              <div class="mini-info">
+                <h1>08+</h1>
+                <span>Years Experience</span>
+              </div>
+            </div>
+            <button class="button-download">
+              <a href="assets/files/jasti-cv.pdf" download="cv-jasti.pdf"><span>DOWNLOAD MY CV</span> <i data-feather="download"></i></a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------PORTOFOLIO SECTION-------------------- -->
+      <section id="portofolio">
+        <div class="head-section">
+            <h1>My Portofolio</h1>
+            <p>Here's one of my best portofolio</p>
+        </div>
+        <div class="content-section">
+            <!-- Slide 1 -->
+            <div class="slideshow-container">
+            <div class="card porto-slide fade-effect ">
+              <article class="content-section">
+                <div class="content-image">
+                  <img src="assets/images/portofolio-1.jpg" alt="" />
+                </div>
+                <aside class="content-info">
+                    <h1>Judul 01</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Quia est quis tempora ea unde debitis? Perspiciatis placeat
+                      facere est iste? Ipsa sed placeat vitae mollitia
+                      accusantium, facere aspernatur aut odit corporis, quod modi,
+                      eum nulla! Id qui, natus sit non dolor ex maxime saepe
+                      ducimus expedita sunt possimus, voluptatum amet?
+                    </p>
+                </aside>
+            </article>
+              </div>
+              <div class="card porto-slide fade-effect ">
+                <article class="content-section">
+                  <div class="content-image">
+                    <img src="assets/images/portofolio-2.jpg" alt="" />
+                  </div>
+                  <aside class="content-info">
+                      <h1>Judul 02</h1>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quia est quis tempora ea unde debitis? Perspiciatis placeat
+                        facere est iste? Ipsa sed placeat vitae mollitia
+                        accusantium, facere aspernatur aut odit corporis, quod modi,
+                        eum nulla! Id qui, natus sit non dolor ex maxime saepe
+                        ducimus expedita sunt possimus, voluptatum amet?
+                      </p>
+                    </aside>
+                </article>
+                </div>
+                <div class="card porto-slide fade-effect ">
+                    <article class="content-section">
+                      <div class="content-image">
+                        <img src="assets/images/portofolio-3.jpg" alt="" />
+                      </div>
+                      <aside class="content-info">
+                          <h1>Judul 03</h1>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Quia est quis tempora ea unde debitis? Perspiciatis placeat
+                            facere est iste? Ipsa sed placeat vitae mollitia
+                            accusantium, facere aspernatur aut odit corporis, quod modi,
+                            eum nulla! Id qui, natus sit non dolor ex maxime saepe
+                            ducimus expedita sunt possimus, voluptatum amet?
+                          </p>
+                        </aside>
+                    </article>
+                    </div>
+            </div>
+              <div class="container-btn-nav"style="text-align:center">
+                <label class="btn-nav" onclick="currentSlide(1)"></label>
+                <label class="btn-nav" onclick="currentSlide(2)"></label>
+                <label class="btn-nav" onclick="currentSlide(3)"></label>
+              </div>
+        </div>          
+      </section>
+      <!-- ------------------------My Skill SECTION------------------ -->
+      <!-- <section id="skill">
+        <div class="head-section">
+          <h1>My Skill</h1>
+          <p>Here's some of my articles</p>
+        </div>
+        <div class="content-section"></div>
+      </section> -->
+
+      <!-- -----------------------CONTACT SECTION---------------- -->
+      <section id="contact">
+        <div class="head-section">
+            <h1>My Contact</h1>
+            <p>Reach me up!</p>
+          </div>
+          <div class="card">
+          <div class="content-section">
+            <div class="additional-image">
+                <img src="assets/images/contact-me.svg" class="contact-image" alt="" />
+              </div>
+              <aside class="content-info">
+                <h3>My Social Media</h3>
+                <div class="sosmed-info">
+                    <i data-feather="instagram"></i>
+                    <a href="https://www.instagram.com/ohannajasti/"><span>ohannajasti</span></a>
+                </div>
+                <div class="sosmed-info">
+                    <i data-feather="youtube"></i>
+                    <span>Jasti Ohanna</span>
+                </div>
+                <div class="sosmed-info">
+                    <i data-feather="linkedin"></i>
+                    <a href="https://www.linkedin.com/in/jasti-ohanna-267463218/" target="_blank" rel="noopener noreferrer"><span>Jasti Ohanna</span></a>
+                </div>
+                <h3>Contact Info</h3>
+                <div class="sosmed-info">
+                    <i data-feather="phone"></i>
+                    <span>+62 819 5731 2702</span>
+                </div>
+                <div class="sosmed-info">
+                    <i data-feather="mail"></i>
+                    <span>justea.20w@gmai.com</span>
+                </div>
+            </aside>
+
+          </div>
+            </div>  
+               
+          </div>
+      </section>
+    </main>
+    <footer>
+        <p>Made by Jasti Ohanna with  <i data-feather="heart" class="heart"></i></p>
+    </footer>
+  </body>
+  <script src="assets/js/app.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</html>
